@@ -4,7 +4,7 @@ import requests
 import os
 
 # Set OpenRouter API Key (Replace with your actual OpenRouter API key)
-OPENROUTER_API_KEY = "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"  # Replace with your OpenRouter API Key
+OPENROUTER_API_KEY = "key"  # Replace with your OpenRouter API Key
 
 # Initialize OpenRouter Client
 client = openai.OpenAI(api_key=OPENROUTER_API_KEY, base_url="https://openrouter.ai/api/v1")
@@ -12,7 +12,7 @@ client = openai.OpenAI(api_key=OPENROUTER_API_KEY, base_url="https://openrouter.
 
 # Function to fetch travel recommendations using SerpAPI
 def fetch_travel_recommendations(query):
-    SERPAPI_KEY = "378227f20d34d105646ea1b4e8295e7e3f4f72cda2c47b3aa9352eefbea7f6d5"  # Replace with your SerpAPI key
+    SERPAPI_KEY = "key"  # Replace with your SerpAPI key
     url = f"https://serpapi.com/search.json?q={query}&hl=en&gl=us&api_key={SERPAPI_KEY}"
 
     try:
